@@ -13,7 +13,10 @@ Una vez construidos los modelos, se realiza el analisis de sentimiento en los Tw
 ## Extras del proyecto
 Se realizaron diferentes funcionalidades aparte del modelo principal como parte de la exploración del proyecto
 
-### Red neuronal recurrente 
+### Red Neuronal Recurrente 
+Con el fin de desarrollar una opción paralela al modelo utilizado, se desarrolló un model C-LSTM el cuál emplea una capa CNN y una LSTM. La primera permite una extración de las caracteristicas más importantes, mientras que la segunda, resuelve un problema de las RNN y permite reconocer dependencias de largo plazo. Para el preprocesamiento de los datos se utilizó la librería de Keras y para la asociación de palabras con su contexto se usó un modelo pre-entrenado: GloVe. El resultado fue un modelo con una precisión de 78%.
+
+Durante el desarrolló una gran dificultad fue el sobreajuste, sin embargo, por la cantidad de datos utilizados y las técnicas de regularización se obtuvo un modelo estable a través de su entrenamiento y testeo. En expectativa, se buscaba obtener una precisión mayor a 80%, aunque se realizaron mejoras, no se pudo alcanzar esta meta. Sin embargo, comparado con trabajos similares es un buen rendimiento. No se incluirá en el modelo actual debido a que no se considera que aporta significativamente a lo establecido, sino como una opción paralela. 
 
 ### Analisis de Comentarios de Amazon
 
